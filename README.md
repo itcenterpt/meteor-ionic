@@ -4,7 +4,7 @@
 
 ### Build [Ionic](http://ionicframework.com/) apps in [Meteor](https://www.meteor.com/)!
 
-## NOTE: This package is no longer being actively maintained. 
+## NOTE: This package is no longer being actively maintained.
 
 If you are interested in maintaining it, contact me through [my Github profile](https://github.com/nickw). Now that Meteor is officially supporting (and actively recommending) React and Angular, I suggest using [Ionic](https://github.com/driftyco/ionic), [Ionic 2](https://github.com/driftyco/ionic2) or [React-Ionic](https://github.com/pors/reactionic/) as alternatives for building hybrid mobile apps with Meteor.
 
@@ -75,7 +75,7 @@ You can also keep track of the various other repos from the [Meteoric team](http
   * [ ] collection-repeat
 * [x] Loading
 * [x] Modal
-* [x] Navigation (requires [iron:router](https://github.com/EventedMind/iron-router) integration)
+* [x] Navigation (requires [flowrouter](https://github.com/EventedMind/iron-router) integration)
   * [x] ion-nav-view
   * [x] ion-view
   * [x] ion-nav-bar
@@ -98,7 +98,7 @@ You can also keep track of the various other repos from the [Meteoric team](http
   * [x] menu-toggle
   * [x] menu-close
 * [x] Slide Box
-* [x] Tabs (requires [iron:router](https://github.com/EventedMind/iron-router) integration)
+* [x] Tabs (requires [flowrouter] integration)
   * [x] ion-tabs
   * [x] ion-tab
 

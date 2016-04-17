@@ -27,8 +27,8 @@ Template.ionTab.helpers({
       return this.href;
     }
 
-    if (this.path && Router.routes[this.path]) {
-      return Router.routes[this.path].path(Template.currentData());
+    if (this.path) {
+      return this.path;
     }
   },
 
@@ -42,8 +42,9 @@ Template.ionTab.helpers({
     // The initial case where there is no localStorage value and
     // no session variable has been set, this attempts to set the correct tab
     // to active based on the router
-    var route = Router.routes[this.path];
-    if(route && route.path(Template.currentData()) === ionTabCurrent){
+    FlowRouter.watchPathChange();
+    var route = FlowRouter.current();
+    if(route && route.path === ionTabCurrent){
       return 'active';
     }
   },

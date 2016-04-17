@@ -1,8 +1,7 @@
 Package.describe({
-  name: "meteoric:ionic",
-  summary: "Ionic components for Meteor. No Angular!",
-  version: "0.2.0",
-  git: "https://github.com/meteoric/meteor-ionic.git"
+  name: "meteor-ionic-flowrouter",
+  summary: "Fork from meteor-ionic to handle flowrouter",
+  version: "0.1.0"
 });
 
 Cordova.depends({
@@ -15,7 +14,8 @@ Package.onUse(function(api) {
     "templating",
     "underscore",
     "fastclick",
-    "iron:router@1.0.0",
+    "kadira:flow-router@2.11.0",
+    "arillo:flow-router-helpers",
     "tracker",
     "session",
     "jquery"

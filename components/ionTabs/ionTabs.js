@@ -11,7 +11,7 @@ Template.ionTabs.rendered = function () {
 
   this.$('.tabs').children().each(function() {
     var href = $(this).attr('href');
-    var current = Router.current().location.get().path;
+    var current = FlowRouter.current().path;
     if(href === current){
       Session.set('ionTab.current', href);
     }

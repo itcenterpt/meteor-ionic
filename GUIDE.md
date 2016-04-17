@@ -2,7 +2,7 @@
 Make sure you have the required packages installed:
 
 ```
-iron:router
+Flowrouter
 fourseven:scss@2.0.0
 meteoric:ionic-sass
 meteoric:ionicons-sass
@@ -103,7 +103,7 @@ Some of the more advanced components like `ionNavView`, `ionNavBar`, `ionModal`,
 
 ## Layout Structure
 
-### ionBody
+### ionBody [NOT VALID => FLOWROUTER]
 All meteor-ionic apps must have an `ionBody` component at the root. This element has various classes and event handlers attached to it. In your `iron:router` layout, make sure you have an `ionBody` component surrounding your `{{>yield}}`:
 
 ```
@@ -158,12 +158,11 @@ Which would output:
 
 To mimic the sliding-back-and-forth navigation UI of mobile apps, meteor-ionic makes use of the three primary technologies:
 
-- `iron:router`
-- `iron:layout`
+- `FlowRouter`
 - Meteor's `_uihooks`
 
 #### Layout
-As previously mentioned, your layout should have an `ionBody` component at the root. Inside of this you will want to wrap your `yield` in an `ionNavView`, which will take care of animating the templates that `iron:router` renders. Lastly, you'll probably want an `ionNavBar` element at the top of your screen to show the title of the page, as well as navigation items and other action buttons.
+As previously mentioned, your layout should have an `ionBody` component at the root. Inside of this you will want to wrap your `yield` in an `ionNavView`, which will take care of animating the templates that `flowrouter` renders. Lastly, you'll probably want an `ionNavBar` element at the top of your screen to show the title of the page, as well as navigation items and other action buttons.
 
 ```
 {{#ionBody}}
@@ -215,7 +214,7 @@ To create Ionic style tabs you need to wrap your tabs into an `ionTabs` componen
 
 ### ionList
 
-To make an Ionic style list wrap your content in a `ionList` block template. 
+To make an Ionic style list wrap your content in a `ionList` block template.
 
 ```
 {{#ionContent}}
