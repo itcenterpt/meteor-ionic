@@ -1,7 +1,7 @@
 Package.describe({
   name: "itcenterpt:meteor-ionic-flowrouter",
   summary: "Fork from meteor-ionic to handle flowrouter",
-  version: "0.0.1"
+  version: "0.0.2"
 });
 
 Cordova.depends({
@@ -15,6 +15,7 @@ Package.onUse(function(api) {
     "underscore",
     "fastclick",
     "kadira:flow-router@2.11.0",
+    "kadira:blaze-layout@2.3.0",
     "arillo:flow-router-helpers@0.5.2",
     "tracker",
     "session",
