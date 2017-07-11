@@ -1,5 +1,5 @@
 Package.describe({
-  name: "meteor-ionic-flowrouter",
+  name: "itcenterpt:meteor-ionic-flowrouter",
   summary: "Fork from meteor-ionic to handle flowrouter",
   version: "0.1.0"
 });
