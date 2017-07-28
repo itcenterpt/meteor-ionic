@@ -60,7 +60,11 @@ window.addEventListener('native.keyboardshow', function (event) {
 
   // Move the bottom of the content area(s) above the top of the keyboard
   $('.content.overflow-scroll').each(function (index, el) {
+    /*
     $(el).data('ionkeyboard.bottom', $(el).css('bottom'));
+    workaround for native.keyboardshow called twice, always assume bottom 0px
+    */
+    $(el).data('ionkeyboard.bottom', '0px');
     $(el).css({bottom: keyboardHeight});
   });
 
